@@ -3,7 +3,7 @@
 # then convert respective rows to zeros then columns to zero
 # better: start top to right. Set row column changes inplace
 
-def setZeros(matrix: List[List[int]]) -> None:
+def setZeros(matrix):
     ROWS, COLS = len(matrix),  len(matrix[0])
     rowZero = False
 
@@ -30,4 +30,9 @@ def setZeros(matrix: List[List[int]]) -> None:
     if rowZero:
         for c in range(COLS):
             matrix[0][c] = 0
+
+    return matrix
+
+
+
 
