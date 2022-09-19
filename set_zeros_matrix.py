@@ -33,6 +33,7 @@ def setZeros(matrix):
 
     return matrix
 
-
+matrix_array = [[1,0,0], [1,1,1], [1,1,1]]
+print(setZeros(matrix_array))
 
 
